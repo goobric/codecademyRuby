@@ -135,3 +135,6 @@ puts output
 # TASK: Define a new method called add that takes two numbers as arguments.
 # Inside the method, return the sum of those numbers.
 
+def add(y + z)
+    return y + z
+end
