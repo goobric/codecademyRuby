@@ -35,3 +35,12 @@ def prime(n)
 def welcome
     puts "Welcome to Ruby!"
 end
+
+#TASK: We’ve started a method in the editor to the right, but it’s incomplete.
+#Replace the ___s with the correct keywords so the method will work!
+
+def puts_1_to_10
+    (1..10).each { |i| puts i }
+end
+  
+  puts_1_to_10 # Ignore this for now. We'll explain it soon!
