@@ -138,3 +138,19 @@ puts output
 def add(y + z)
     return y + z
 end
+
+## Practice Makes Perfect
+# You won’t become a Master Method Maker ‘til you make a mess of methods. (Say that three times fast.)
+
+def by_five?(n)
+  return n % 5 == 0
+end
+
+# The example above is just a reminder on how to define a method.
+# TASK: Define a greeter method that takes a single string parameter, name, and returns a string greeting that person.
+# Make sure to use return and don’t use print or puts.
+
+def greeter(name)
+  return "Hello " + name + "."
+end
+
