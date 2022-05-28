@@ -36,6 +36,12 @@ frequencies = Hash.new(0)
 
 words.each { |word| frequencies[word] += 1 }
 
+frequencies = frequencies.sort_by do |word, count|
+    count
+  end
+  
+  frequencies.reverse!
+
 # Building the Words Array
 # Next, we’ll want to turn the user’s string into something we can iterate over. A data structure made up of elements all in a line, you say? That sounds like an array!
 # By calling the .split method on text, we can transform it into an array.
@@ -99,8 +105,14 @@ colors = {
 # Can you do the same thing with the frequencies hash?
 # Task: Use .sort_by to sort the frequencies hash by word count, like step 2 above. Store the result back in frequencies.
 # Use .reverse! to reverse the sorted frequencies array.
+## Hint
+# Our first step should be to reassign frequencies to its sorted version (.sort_by doesn’t sort the hash in-place—it will create a copy that is sorted):
 
+frequencies = frequencies.sort_by { |k, v| v }
 
+# This actually returns an array of values, which you can then reverse in-place with reverse!:
+
+frequencies.reverse!
 
 
 
