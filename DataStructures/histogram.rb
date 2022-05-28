@@ -38,9 +38,15 @@ words.each { |word| frequencies[word] += 1 }
 
 frequencies = frequencies.sort_by do |word, count|
     count
-  end
+end
   
-  frequencies.reverse!
+frequencies.reverse!
+
+frequencies.each do |word, frequency|
+    puts word + " " + frequency.to_s
+end
+
+#** The quick brown fox jumped over the lazy gray dog who then jumped over the brown cat to climb on the gray mouse
 
 # Building the Words Array
 # Next, we’ll want to turn the user’s string into something we can iterate over. A data structure made up of elements all in a line, you say? That sounds like an array!
@@ -80,7 +86,7 @@ puts colors["blue"]
 # Then, we increment the value stored by "blue" by 1.
 # Finally, we print out 4, the value stored by "blue".
 
-# Task: Use .each to iterate over the words array.
+# Task: Use .each to iterate over the words array. ADD FROM LINE 37
 # For each word we find, assume that the word itself is a key in frequencies and increment its value by 1.
 # This is why our default is 0. The first time we find the word, it will have a default value of 0 that we can increment by 1.
 ##Hint if you need help.
@@ -104,7 +110,7 @@ colors = {
 
 # Can you do the same thing with the frequencies hash?
 # Task: Use .sort_by to sort the frequencies hash by word count, like step 2 above. Store the result back in frequencies.
-# Use .reverse! to reverse the sorted frequencies array.
+# Use .reverse! to reverse the sorted frequencies array. ADD FROM LINE 39
 ## Hint
 # Our first step should be to reassign frequencies to its sorted version (.sort_by doesn’t sort the hash in-place—it will create a copy that is sorted):
 
@@ -114,6 +120,27 @@ frequencies = frequencies.sort_by { |k, v| v }
 
 frequencies.reverse!
 
+## Iterating Over the Hash
+# Almost there! Finally, we’ll need to iterate over the array to print out each key-value pair to the console.
 
+fruit = {
+  "apple" => 2,
+  "banana" => 3,
+  "cherry" => 5
+}
+ 
+fruit.each do |name, count|
+  puts name + " " + count.to_s
+end
 
+# In the example above, we create a hash called fruit that maps names of fruit to the amount that we own.
+# Then, we iterate over .each key/value pair, storing the key as name and the value as count.
+# Finally, we print out the key and value separated by a space. Note that we must first convert the value from a number to a string using .to_s before we can concatenate it.
+# Task: Iterate over .each key/value pair in the frequencies hash. ADD FROM LINE 45
+# Then, puts each word, a single space, and its frequency to the console, like in the example above.
+# HINT
+# Your code should look something like this:
 
+rb frequencies.each do |word, frequency|
+    puts word + " " + frequency.to_s
+end
