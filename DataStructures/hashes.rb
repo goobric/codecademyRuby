@@ -25,6 +25,7 @@ my_hash = Hash.new
 # Setting a variable equal to Hash.new creates a new, empty hash; it’s the same as setting the variable equal to empty curly braces ({}).
 
 # 1. Use Hash.new to create a new hash called pets. Hash must be capitalized, or Ruby won’t know what you’re talking about!
+pets = Hash.new
 
 
 
