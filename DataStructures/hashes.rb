@@ -131,5 +131,18 @@ end
 # soup: 3
 # salad: 2
 
+# Task: Use .each to iterate over the secret_identities hash.
+# Use puts to print each key-value pair, separated by a colon and a space (:), to the console, just like the example above.
+
+secret_identities = {
+    "The Batman" => "Bruce Wayne",
+    "Superman" => "Clark Kent",
+    "Wonder Woman" => "Diana Prince",
+    "Freakazoid" => "Dexter Douglas"
+  }
+secret_identities.each do |hero, name|
+    puts "#{hero}: #{name}"
+end
+
 
 
