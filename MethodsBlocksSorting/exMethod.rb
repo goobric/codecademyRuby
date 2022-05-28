@@ -87,7 +87,30 @@ end
 square(12)
 # ==> prints "144"
 
-The argument is the piece of code you actually put between the method’s parentheses when you call it, and the parameter is the name you put between the method’s parentheses when you define it. For instance, when we defined square above, we gave it the parameter n (for “number”) and passed it the argument 12 when we called it.
-You can think of parameters as placeholders the method definition gives to arguments since it doesn’t know ahead of time exactly what argument it’s going to get.
-Parentheses are usually optional in Ruby, but it’s a good idea to put your parameters and arguments in parentheses for readability.
-TASK: Call the cubertino method in the editor, passing it an argument of 8.
+# The argument is the piece of code you actually put between the method’s parentheses when you call it, and the parameter is the name you put between the method’s parentheses when you define it. For instance, when we defined square above, we gave it the parameter n (for “number”) and passed it the argument 12 when we called it.
+# You can think of parameters as placeholders the method definition gives to arguments since it doesn’t know ahead of time exactly what argument it’s going to get.
+# Parentheses are usually optional in Ruby, but it’s a good idea to put your parameters and arguments in parentheses for readability.
+# TASK: Call the cubertino method in the editor, passing it an argument of 8.
+def cubertino(n)
+    puts n ** 3
+end
+  
+cubertino(8)
+
+## Splat!
+# Speaking of not knowing what to expect: your methods not only don’t know what arguments they’re going to get ahead of time but occasionally, they don’t even know how many arguments there will be.
+# Let’s say you have a method, friend, that puts the argument it receives from the user. It might look something like this:
+
+def friend(name):
+  puts "My friend is " + name + "."
+end
+
+# This is great for just one friend, but what if you want to print out the all of the user’s friends, without knowing how many friend names the user will put in ahead of time?
+# The solution: splat arguments. Splat arguments are arguments preceded by a *, which tells the program that the method can receive one or more arguments.
+# Instructions
+# Run the code. Feel free to play around and call what_up on as many friends as you like!
+def what_up(greeting, *friends)
+    friends.each { |friend| puts "#{greeting}, #{friend}!" }
+end
+  
+  what_up("What up", "Ian", "Zoe", "Zenas", "Eleanor")
