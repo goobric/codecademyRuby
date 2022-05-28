@@ -34,6 +34,8 @@ words = text.split
 
 frequencies = Hash.new(0)
 
+words.each { |word| frequencies[word] += 1 }
+
 # Building the Words Array
 # Next, we’ll want to turn the user’s string into something we can iterate over. A data structure made up of elements all in a line, you say? That sounds like an array!
 # By calling the .split method on text, we can transform it into an array.
@@ -60,6 +62,24 @@ puts h["kitty"]
 ## Instructions
 # Create a hash called frequencies in the editor.
 # Give it a default value of 0.
+
+## Iterating Over the Array
+# Perfect! Next up: we want to iterate over words to add each word to our frequencies hash, one at a time.
+
+colors = { "red" => 2, "blue" => 3 }
+colors["blue"] += 1
+puts colors["blue"]
+
+# In the above example, we first create a hash mapping strings to integers.
+# Then, we increment the value stored by "blue" by 1.
+# Finally, we print out 4, the value stored by "blue".
+
+# Task: Use .each to iterate over the words array.
+# For each word we find, assume that the word itself is a key in frequencies and increment its value by 1.
+# This is why our default is 0. The first time we find the word, it will have a default value of 0 that we can increment by 1.
+##Hint if you need help.
+# The action we want is to update the hash with a key equal to the word, then increment its value by 1. Each key will be frequencies[word], and we can increment using += 1.
+
 
 
 
