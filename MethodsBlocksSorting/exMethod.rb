@@ -149,8 +149,12 @@ end
 # The example above is just a reminder on how to define a method.
 # TASK: Define a greeter method that takes a single string parameter, name, and returns a string greeting that person.
 # Make sure to use return and don’t use print or puts.
+# Define a by_three? method that takes a single integer parameter, number, and returns true if that number is evenly divisible by three and false if not.
 
 def greeter(name)
   return "Hello " + name + "."
 end
 
+def by_three?(number)
+    return number % 3 == 0
+end
