@@ -144,5 +144,24 @@ secret_identities.each do |hero, name|
     puts "#{hero}: #{name}"
 end
 
+## Multidimensional Arrays
+
+# Great work! You’ve learned a lot in this lesson. Let’s do a little review to be sure you really know your stuff.
+# Instructions
+# Task: Create your own multidimensional array called my_array in the editor. The elements of the innermost array can be anything you like: numbers, strings, booleans, and so on. Check the Hint if you need help.
+
+my_array = [["bmw", "winkelhock"], ["audi", "bintcliff"], ["vauxhall", "cleland"], ["ford", "rouse"], ["renault", "harvey"]]
+
+btcc = {
+    "bmw" => "winkelhock"
+    "audi" => "bincliff"
+    "vauxhall" => "cleland"
+    "ford" => "rouse"
+    "renault" => "harvey"
+}
+btcc.each do |team, driver|
+    puts "#{team}: #{driver}"
+end
+
 
 
