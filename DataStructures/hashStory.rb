@@ -146,3 +146,8 @@ sounds = {
 
 # TASK: Add at least two more keys to the symbol_hash hash replacing the ______ blanks.
 # The keys should all be symbols; their associated values can be anything you like.
+symbol_hash = {
+    :one => 1,
+    :two => 3,    # Fill in the blanks!
+    :three => 5,
+}
