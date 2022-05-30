@@ -66,3 +66,15 @@ my_array = [1, 2, 3, 4, 5]
 my_array.each do |num|
   puts num * num
 end
+
+## Sorting
+
+# Finally, let’s review what we learned about sorting.
+
+books.sort! do |firstBook, secondBook|
+  firstBook <=> secondBook
+end
+
+# Remember that the above example was how we sorted in alphabetical order.
+# TASK: Use .sort! to sort the fruits array in descending (that is, reverse) alphabetical order.
+# You can use the combined comparison operator (like the example above) or an if/elsif/else statement.
