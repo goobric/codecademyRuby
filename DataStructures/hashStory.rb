@@ -233,3 +233,10 @@ numbers = {
 # You could have a hash where the keys/values look like this:
 rb { :primer => "Awesome", :memento => "Not as good the 2nd time", }
 
+# movies { :name => "300", :descrip => "300 Spartans beat Persians", }
+
+movies = {
+    :children => "Moana",
+    :scifi => "Mortal Kombat",
+    :history => "Lincoln"
+}
