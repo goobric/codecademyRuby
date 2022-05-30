@@ -18,4 +18,9 @@ my_array.sort!
 # These “strategies” are the sorting algorithms mentioned in the previous example. Our job is to decide how to compare two items in the list, and let Ruby decide which strategy to use.
 # TASK: What Ruby method could we call on books in order to sort the list of books alphabetically?
 
+# library sorting code
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
 
+# How might we sort! the books in alphabetical order? (Hint, hint)
+books.sort!
+puts books
