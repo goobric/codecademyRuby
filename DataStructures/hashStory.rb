@@ -108,3 +108,9 @@ puts "string".object_id
 
 puts :symbol.object_id
 puts :symbol.object_id
+
+16479360
+16465700
+802268
+802268
+
