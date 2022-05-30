@@ -229,3 +229,7 @@ numbers = {
 # The keys should be the names of movies.
 # The values should be quick descriptions or reviews.
 # Check out the Hint if you want an example to get you started!
+
+# You could have a hash where the keys/values look like this:
+rb { :primer => "Awesome", :memento => "Not as good the 2nd time", }
+
