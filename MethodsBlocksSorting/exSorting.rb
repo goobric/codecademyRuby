@@ -52,3 +52,6 @@ books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brie
 books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
 
 # Sort your books in descending order, in-place below
+books.sort! { |firstBook, secondBook|
+    secondBook <=> firstBook }
+    
