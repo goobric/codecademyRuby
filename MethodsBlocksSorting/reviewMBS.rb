@@ -16,3 +16,8 @@ def method_name(optional arguments)
   # Do something
 end
 
+def welcome
+    puts "Welcome to Ruby!"
+end
+
+welcome
