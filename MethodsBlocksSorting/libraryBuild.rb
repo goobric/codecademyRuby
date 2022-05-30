@@ -18,7 +18,11 @@ puts "A-Z: #{alphabetize(books)}"
 puts "Z-A: #{alphabetize(books, true)}"
 
 def alphabetise(arr, rev=false)
+    arr.sort!
 end
+
+num = [11, 18, 5, 6, 9, 2]
+puts alphabetise(num)
 
 ## 01 Defining Our Method
 # First, we’ll need to define our alphabetize method. LINE 20
@@ -55,9 +59,12 @@ puts numbers
 # In Ruby, there are two sorting methods, .sort or sort!.
 # The first method, .sort, simply returns a sorted array while leaving the original array alone.
 # The second method, .sort!, modifies the actual array.
-# TASK: Inside your method, add a line that calls .sort! on the arr array.
+# TASK: Inside your method, add a line that calls .sort! on the arr array. LINE 21
 # Since it is the last line of the method, the sorted array will be returned.
 # Now test your work!
-# After your method, make a new array called numbers that contains a few numbers like the example above.
+# After your method, make a new array called numbers (LINE 24)that contains a few numbers like the example above.
 # Call your alphabetize method with your numbers array as the parameter and puts the result to the console.
 
+numbers = [9, 11, 6, 18, 3, 2]
+alphabetize(numbers)
+puts alphabetize
