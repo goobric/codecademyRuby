@@ -84,3 +84,11 @@ no_nil_hash = Hash.new("I am not NIL")
 # Those funny-looking variables that start with colons are symbols.
 # Click Next to the next section for a symbol rundown.
 
+menagerie = { :foxes => 2,
+    :giraffe => 1,
+    :weezards => 17,
+    :elves => 1,
+    :canaries => 4,
+    :ham => 1
+}
+
