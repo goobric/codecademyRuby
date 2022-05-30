@@ -10,4 +10,9 @@ end
 # ITASK: Create a method, welcome, that puts “Welcome to Ruby!”
 # After defining your method, call it.
 
+#Don’t forget your method syntax:
+
+def method_name(optional arguments)
+  # Do something
+end
 
