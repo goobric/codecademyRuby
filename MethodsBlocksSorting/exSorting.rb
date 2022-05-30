@@ -10,3 +10,12 @@ my_array = [3, 4, 8, 7, 1, 6, 5, 9, 2]
 # Call the sort! method on my_array below.
 # my_array should then equal [1, 2, 3, 4, 5, 6, 7, 8, 9].
 my_array.sort!
+
+### Foundations
+# If we were to hand you five books and ask you to arrange them, sorted by title, on a shelf, how would you do it?
+# Most sorting algorithms assume we are sorting an array of items, which involves comparing any two items in the array and deciding which should come first.
+# For our books example, if for any pair we always chose the book whose title came first in the alphabet, we could devise a strategy for sorting.
+# These “strategies” are the sorting algorithms mentioned in the previous example. Our job is to decide how to compare two items in the list, and let Ruby decide which strategy to use.
+# TASK: What Ruby method could we call on books in order to sort the list of books alphabetically?
+
+
