@@ -26,7 +26,6 @@ end
 # It shouldn’t take any arguments yet, and there doesn’t need to be anything in the body of the method.
 
 ## 02 Default Parameters
-
 # Let’s start with the new bit of code you saw in exercise 1:
 
 def alphabetize(arr, rev=false)
@@ -41,3 +40,24 @@ alphabetize(books)
 # Ruby didn’t see a rev, so it gave it the default value of false.
 # TASK: Update your alphabetize method with two parameters: arr, representing the array to be passed in, and rev, a boolean that defaults to false.
 # Update LINE 20
+
+## 03 Sorting
+# Great! Now let’s add a little logic to our method.
+
+numbers = [5, 1, 3, 8]
+numbers.sort!
+puts numbers
+
+# In the above example, we create a new array called numbers.
+# Then, we sort the array.
+# Finally, we print out 1, 3, 5, 8, the sorted array.
+
+# In Ruby, there are two sorting methods, .sort or sort!.
+# The first method, .sort, simply returns a sorted array while leaving the original array alone.
+# The second method, .sort!, modifies the actual array.
+# TASK: Inside your method, add a line that calls .sort! on the arr array.
+# Since it is the last line of the method, the sorted array will be returned.
+# Now test your work!
+# After your method, make a new array called numbers that contains a few numbers like the example above.
+# Call your alphabetize method with your numbers array as the parameter and puts the result to the console.
+
