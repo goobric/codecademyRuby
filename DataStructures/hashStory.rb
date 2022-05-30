@@ -12,6 +12,8 @@ breakfast = {
 #Remember that keys must be unique, but values can repeat.
 #That’s why we can have more than one key share the value “tasty.”)
 
+my_hash = Hash.new
+
 #We can create hashes several ways, but two of the most popular are
 #1. hash literal notation:
 
@@ -21,4 +23,5 @@ new_hash = { "one" => 1 }
 
 new_hash = Hash.new
 
-# TASK: Create a hash called my_hash using whichever method you prefer.
+# TASK: Create a hash called my_hash using whichever method you prefer. LINE 15
+
