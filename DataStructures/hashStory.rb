@@ -75,3 +75,12 @@ my_hash = Hash.new("Trady Blix")
 # You can always read more hashy goodness in the official Ruby documentation
 # TASK: In the meantime, create a hash called no_nil_hash and give it any default value other than nil.
 no_nil_hash = Hash.new("I am not NIL")
+
+## 06 A Key of a Different Color
+
+# We can certainly use strings as Ruby hash keys; as we’ve seen, there’s always more than one way to do something in Ruby.
+# However, the Rubyist’s approach would be to use symbols.
+# TASK: Check out the code in the editor.
+# Those funny-looking variables that start with colons are symbols.
+# Click Next to the next section for a symbol rundown.
+
