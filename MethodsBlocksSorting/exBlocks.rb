@@ -9,3 +9,9 @@
 
 # Check out the examples in the editor. Look familiar? Run the code to see the blocks execute their code.
 
+1.times do
+    puts "I'm a code block!"
+end
+  
+1.times { puts "As am I!" }
+
