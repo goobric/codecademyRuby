@@ -63,6 +63,6 @@ creatures = { "weasels" => 0,
     "Heffalumps" => 7,
     "Tiggers" => 1
 }
-
+creatures["lions"]
 
 
