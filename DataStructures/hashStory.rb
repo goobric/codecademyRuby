@@ -197,7 +197,7 @@ strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
 symbols = []
 
 strings.each do |s| 
- symbols.push(s.to_sym)
+ symbols.push(s.to_sym) #.intern
 end 
 print symbols
 
@@ -212,3 +212,20 @@ print symbols
 # When you’re looking at someone else’s code, you might see .to_sym or .intern (or both!) when converting strings to symbols.
 # TASK: Update your code from the last exercise to use .intern instead of .to_sym.
 
+## 12 All Aboard the Hash Rocket!
+#The hash syntax you’ve seen so far (with the => symbol between keys and values) is sometimes nicknamed the hash rocket style.
+
+numbers = {
+  :one => 1,
+  :two => "two",
+  :three => 3,
+}
+
+# This is because the => looks like a tiny rocket!
+
+# Let’s build a hash from the ground up using symbols as keys.
+# TASK: Create a hash called movies with symbols as keys and strings as values.
+# Inside your hash, add two key/value pairs.
+# The keys should be the names of movies.
+# The values should be quick descriptions or reviews.
+# Check out the Hint if you want an example to get you started!
