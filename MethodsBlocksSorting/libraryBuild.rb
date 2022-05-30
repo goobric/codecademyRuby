@@ -19,6 +19,11 @@ puts "Z-A: #{alphabetize(books, true)}"
 
 def alphabetise(arr, rev=false)
     arr.sort!
+    if rev == true
+        arr.reverse!
+    else
+        arr
+    end
 end
 
 num = [11, 18, 5, 6, 9, 2]
@@ -81,7 +86,11 @@ puts numbers
 # Like with .sort!, the exclamation mark means we modify the actual array.
 # Finally, we print out 5, 4, 3, 2, and 1.
 
-# TASK: After your .sort! call, add an if-else statement. 
+# TASK: After your .sort! call, add an if-else statement. LINE 22
 # If rev is true, call reverse! on arr, else return arr.
 # Keep your numbers array and the puts statement so that you can see your work in action!
 
+# You Did It! (For Real This Time)
+# Well done! You now have your very own method that adds functionality that Ruby didn’t have before.
+# Building your own methods is great for using code over and over without having to retype things, but it’s also great for abstracting or simplifying your program. Once you write alphabetize, you don’t ever have to think about how it works—you just call it whenever you need it.
+# Click Run to finish this project and continue your journey toward Ruby Method Mastery.
