@@ -1,6 +1,6 @@
 ## The Hash Story So Far
 
-# Recall that hashes are collections of key-value pairs, where a unique key is associated with some value. For example:
+# 01 Recall that hashes are collections of key-value pairs, where a unique key is associated with some value. For example:
 
 breakfast = { 
   "bacon" => "tasty",
@@ -25,3 +25,13 @@ new_hash = Hash.new
 
 # TASK: Create a hash called my_hash using whichever method you prefer. LINE 15
 
+## 02 Iterating Over Hashes
+# We can also iterate over hashes using the .each method.
+# For example, we could do
+
+my_hash.each do |key, value|
+  puts my_hash[key]
+end
+
+# This will print out a list of values from my_hash, each on its own line.
+# TASK: Iterate over the matz hash and print each value to the console using puts.
