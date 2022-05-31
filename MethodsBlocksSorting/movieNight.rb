@@ -114,3 +114,31 @@ Below your existing code, create a case statement for the choice variable with t
     when "display", please puts "Movies!"
     when "delete", please puts "Deleted!"
     Otherwise (i.e. else), please puts "Error!"Don’t forget the end statement after your case/when lines.
+
+### Prompting: Redux!
+
+# Great! Let’s build out each part of the case, one step at a time. We’ll start with the “add” branch.
+# Inside your when "add" block, remove the puts "Added!" statement.
+        
+# In its place, prompt the user for a movie title. Save the result in a new variable called title. (Your code already has an example of how to do this!)
+        
+# Next, prompt the user for the rating of the movie. Save that in a new variable called rating.
+        
+# Add that movie/rating pair to the movies hash and puts a message indicating the pair was added. (No need for to_sym or to_i just yet!)
+        
+## HINT
+# Feel free to peek back at the first exercise if you need help!
+# Prompting for input looks like this:
+
+puts "Enter a number"
+number = gets.chomp
+
+# Adding a key/value pair to a hash looks like this:
+
+numbers = {}
+numbers["one"] = 1
+puts 3 + numbers["one"]
+# prints out "4"
+
+
+        
