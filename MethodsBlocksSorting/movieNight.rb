@@ -164,3 +164,15 @@ age = 26
  
 nil_variable.nil? # true
 age.nil? # false
+
+## Update
+
+# Perfect! Let’s move on to the next branch of our case statement, which handles updating an existing movie in the hash. (This should be very similar to the work we did in the “add” branch!) We’ll do this in three steps:
+# TASK: Inside your when "update" block, remove the puts "Updated!" statement.
+
+# Prompt the user for a movie title. Store it in title.
+# if the movies[title] is nil, then the movie is not in the hash. Please puts a string telling the user of their error.
+# Otherwise (else), we need to update the movies hash.
+# Prompt the user for a new rating. Set the movie’s rating to that new value.
+
+# Make sure to test it out!
