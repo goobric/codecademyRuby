@@ -12,9 +12,9 @@ case choice
 when "add"
   puts "What movie would you like to add? "
   title = gets.chomp
-  puts "What rating does the movie have? "
+  puts "What rating does the movie have 0-5? "
   rating = gets.chomp
-  movies[title.to_s] = rating
+  movies[title.to_sym] = rating.to_i
 when "update"
   puts "Updated!"
 when "display"

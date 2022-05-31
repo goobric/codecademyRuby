@@ -148,4 +148,4 @@ puts 3 + numbers["one"]
 # TASK: Call .to_sym on your title and .to_i on your rating so that your movie titles are stored as symbols in the hash and the associated ratings are stored as integers.
 # HINT
 # You can also use .intern instead of .to_sym, if you like.
-        
+  
