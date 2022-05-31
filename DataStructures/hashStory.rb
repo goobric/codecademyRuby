@@ -297,3 +297,7 @@ end
 
 puts "String time: #{string_time} seconds."
 puts "Symbol time: #{symbol_time} seconds."
+
+# resutlts
+# String time: 0.007215512989205308 seconds.
+# Symbol time: 0.0045267810055520386 seconds.
