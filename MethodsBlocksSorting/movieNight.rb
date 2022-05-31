@@ -148,4 +148,19 @@ puts 3 + numbers["one"]
 # TASK: Call .to_sym on your title and .to_i on your rating so that your movie titles are stored as symbols in the hash and the associated ratings are stored as integers.
 # HINT
 # You can also use .intern instead of .to_sym, if you like.
-  
+
+### Error! Error!
+
+# All right! We’re nearly done with the “add” part of our case. The final thing we’ll want to do is perform a check to see whether the movie to be added is already in the hash.
+
+# To do this, we’ll add an if/else statement.
+# TASK: Add an if/else statement to the add branch of your case.
+# If the movie isn’t already in the hash (that is, if movies[title.to_sym] is nil), it should add the movie/rating pair; otherwise, it should puts that the movie already exists and not add anything to the hash.
+# Make sure to test it!
+The .nil? method will return true if the object it’s called on is nil, and false otherwise:
+
+nil_variable = nil
+age = 26
+ 
+nil_variable.nil? # true
+age.nil? # false
