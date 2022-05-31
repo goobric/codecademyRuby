@@ -4,12 +4,17 @@ movies = {
     Matrix: 4,
     Bourne: 4
 }
-puts "-- Type a movie name, to add the movie to the db."
-choice = gets.chomp.downcase
+puts "What would you like to do? "
+
+choice = gets.chomp
 
 case choice
 when "add"
-  puts "Added!"
+  puts "What movie would you like to add? "
+  title = gets.chomp
+  puts "What rating does the movie have? "
+  rating = gets.chomp
+  movies[title.to_s] = rating
 when "update"
   puts "Updated!"
 when "display"
