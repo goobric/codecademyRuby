@@ -58,3 +58,16 @@ when 'delete'
   else
     puts "Sorry, I didn't understand you."
 end
+
+### OUTPUT
+# What would you like to do?
+#     -- Type 'add' to add a movie.
+#     -- Type 'update' to update a movie.
+#     -- Type 'display' to display all movies.
+#     -- Type 'delete' to delete a movie.
+#     add
+# What movie do you want to add?
+#     matrix
+# What's the rating? (Type a number 0 to 4.)
+#     4
+#     matrix has been added with a rating of 4.
