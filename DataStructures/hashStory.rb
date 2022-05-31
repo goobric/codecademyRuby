@@ -338,3 +338,23 @@ movie_ratings = {
   lion_king: 3.5
 }
 # Add your code below!
+# movie_rating.select {|name, rate| good_movies > 3}
+
+good_movies = movie_ratings.select { |name, rating| rating > 3 }
+
+## More Methods, More Solutions
+
+# We’ve often found we only want the key or value associated with a key/value pair, and it’s kind of a pain to put both into our block and only work with one. Can we iterate over just keys or just values?
+# This is Ruby. Of course we can.
+# Ruby includes two hash methods, .each_key and .each_value, that do exactly what you’d expect:
+
+my_hash = { one: 1, two: 2, three: 3 }
+ 
+my_hash.each_key { |k| print k, " " }
+# ==> one two three
+ 
+my_hash.each_value { |v| print v, " " }
+# ==> 1 2 3
+
+# Let’s wrap up our study of Ruby hashes and symbols by testing these methods out.
+# TASK: Go ahead and print out just the titles of our movies using puts.
