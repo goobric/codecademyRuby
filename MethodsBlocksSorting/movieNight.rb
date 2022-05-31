@@ -10,7 +10,7 @@ movies = {
     Memento: 3,
     Primer: 4,
     Ishtar: 1
-  }
+}
   
 puts "What would you like to do?"
 puts "-- Type 'add' to add a movie."
