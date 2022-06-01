@@ -71,5 +71,5 @@ when "delete"
         end
     
   else
-    puts "Error!"
+    puts "Something isn't quite right, let us try again!"
 end
