@@ -61,7 +61,15 @@ when "display"
       puts "#{movie}: #{rating}"
     end
 when "delete"
-    puts "Deleted!"
+    puts "what movie do you want to delete?"
+    title = gets.chomp
+        if movies[title.to_sym].nil?
+            puts "Movie not found!"
+        else
+            movies.delete(title.to_sym)
+            puts "#{title} has been removed."
+        end
+    
   else
     puts "Error!"
 end
