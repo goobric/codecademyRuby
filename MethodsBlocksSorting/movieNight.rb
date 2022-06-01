@@ -189,3 +189,9 @@ age.nil? # false
 # Primer: 4
 # Ishtar: 1
 
+## Delete
+# Almost there! Let’s handle the “delete” part of our case statement, which will remove whatever key the user specifies from the hash. (This will be very similar to what we did for “add” and “update.”)
+# Ruby makes it easy to remove a movie/rating pair from our hash: we just write movies.delete(title.to_sym)!
+# TASK: Go ahead and remove the puts "Deleted!" when the user types “delete”.
+# Get the title from the user.
+# Include an if/else statement that puts an error if the movie’s not in the hash; if it’s there, use .delete to remove it as shown above. Make sure to test it out!
