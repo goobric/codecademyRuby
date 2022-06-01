@@ -176,3 +176,16 @@ age.nil? # false
 # Prompt the user for a new rating. Set the movie’s rating to that new value.
 
 # Make sure to test it out!
+
+## Display
+# Now let’s handle displaying the contents of our movies hash.
+# This will be a little different from what we did for the “add” and “update” branches.
+# TASK: First, remove the puts "Movies!" when the user types “display”.
+# Next, iterate through the hash using .each and puts each movie/rating pair. The format should be #{movie}: #{rating}. Make sure to test it out!
+# HINT
+# Be careful with your spacing! The output format should be exactly like this: #{movie}: #{rating}, which should result in something like the below.
+
+# Memento: 3
+# Primer: 4
+# Ishtar: 1
+
