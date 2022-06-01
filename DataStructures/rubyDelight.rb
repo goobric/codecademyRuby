@@ -178,4 +178,8 @@ def add(a,b)
     a + b
 end
   
-# And either way, when you call add(1,1), you’ll get 2. 
+# And either way, when you call add(1,1), you’ll get 2.
+# Modify the code in the editor to use an implicit return.
+def multiple_of_three(n)
+    return n % 3 == 0 ? "True" : "False"
+end
