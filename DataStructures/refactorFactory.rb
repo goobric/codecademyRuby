@@ -73,4 +73,7 @@ end
 
 first_n_primes(10)
 
+# TASK: Find the unnecessary return keyword and remove it.
+remove the return word from the Prime.first n statement
+
 
