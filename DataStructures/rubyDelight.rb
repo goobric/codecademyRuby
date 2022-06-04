@@ -355,3 +355,17 @@ end
 # [action if boolean] {|1<2| puts "One is less than two!"}
 # Sol
 puts "One is less than two!" if 1 < 2
+
+## The Ternary Operator
+# Good! Let’s make our code even more streamlined using the ternary operator.
+
+three = 3
+puts three == 3 ? "Of course." : "What?"
+# ==> puts "Of course."
+# The example above is just a syntax reminder.
+# TASK: Refactor the if statement in the editor to use a ternary operator to puts the correct sentence.
+if 1 < 2
+  puts "One is less than two!"
+else
+  puts "One is not less than two."
+end
