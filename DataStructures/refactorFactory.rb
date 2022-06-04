@@ -19,3 +19,21 @@ def first_n_primes(n)
 end
 
 first_n_primes(10)
+
+### Omit Needless Words
+# One of the most common suggestions when it comes to writing is to omit needless words, and it applies just as much to writing Ruby as writing stories.
+# There are two control structures to change here:
+# The unless block:
+
+unless n.is_a? Integer
+    return "n must be an integer."
+end
+
+# The if block below the unless block:
+
+if n <= 0
+    return "n must be greater than 0."
+end
+
+# Both blocks can be simplified using the zen of Ruby!
+
