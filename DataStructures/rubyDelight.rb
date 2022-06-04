@@ -369,3 +369,11 @@ if 1 < 2
 else
   puts "One is not less than two."
 end
+
+# HINT: Here’s another example of the ternary operator in action:
+name = "Matz"
+puts name == "Matz" ? "Hi Dad!" : "Who are you?"
+
+# Solution:
+1 < 2
+puts 1 < 2 ? "One is less than two!" : "One is not less than two"
