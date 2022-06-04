@@ -196,3 +196,38 @@ false && true
 # Remember how Ruby returns the result of the last expression it evaluated?
 # We can use that to show short-circuit evaluation in action.
 # TASK: Because only false and nil are false values in Ruby, both strings are treated as true. Ruby knows true || anything is true, so in a || b, it only evaluates a. Since it might encounter a false in the b part of a && b, however, it has to evaluate b, which we see in the result!
+
+def a
+    puts "A was evaluated!"
+    return true
+end
+  
+def b
+    puts "B was also evaluated!"
+    return true
+end
+  
+puts a || b
+puts "------"
+puts a && b
+
+# The Right Tool for the Job
+# Sooner or later, you’re going to need to perform a repetitive task in your programs. Many programming languages allow you to do this with a for loop, and while Ruby does include for loops, there are better tools available to us.
+# If we want to do something a specific number of times, we can use the .times method, like so:
+  5.times { puts "Odelay!" }
+  # Prints 5 "Odelay!"s on separate lines
+  
+  # If we want to repeat an action for every element in a collection, we can use .each:
+  
+  [1, 2, 3].each { |x| puts x * 10 }
+  # Prints 10, 20, 30 on separate lines
+# HINT: Let’s get a little inventive. Write a loop that only puts the even values of my_array. (Bonus points if you use a one-line if!)Let’s get a little inventive. Write a loop that only puts the even values of my_array. (Bonus points if you use a one-line if!)
+# Remember, even numbers are evenly divisible by two. You can check this several ways, but we’d probably use this method: even? => true/false
+even_array = my_array
+if even_array even?
+  puts even_array
+else
+puts "odd"
+end
+
+my_array.each { |even?| puts even}
