@@ -254,4 +254,7 @@ my_array.each { |num| puts num unless num % 2 !=0 }
 # If you wanted to do the entire alphabet, you would do this:
 
 rb "A".upto("Z") { |letter| puts letter }
-  
+
+# Write your code below!
+
+"L".upto ("P") {|letter| puts letter}
