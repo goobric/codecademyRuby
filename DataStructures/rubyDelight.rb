@@ -298,3 +298,8 @@ age.respond_to?(:next)
 # TASK: Update the code in the editor to use the concatenation operator instead of .push and +.
 # puts the caption
 # HINT: All you need to do is replace .push and + with <<. Ruby makes everything easy!
+alphabet = ["a", "b", "c"]
+alphabet.push("d") # Update me!  with <<
+
+caption = "A giraffe surrounded by "
+caption += "weezards!" # Me, too! with <<
