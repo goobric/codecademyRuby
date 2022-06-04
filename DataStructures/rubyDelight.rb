@@ -280,4 +280,5 @@ age = 26
 
 # Add your code below!
 
-age.respond_to? {|:next| puts next}
+# Attempt => age.respond_to? {|:next| puts next}
+age.respond_to?(:next)
