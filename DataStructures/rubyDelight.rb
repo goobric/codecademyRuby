@@ -424,3 +424,12 @@ end
 favorite_animal ||= "lion"
 # solution
 another_animal ||= "cat"
+
+### Implicit Return
+# Next up: let’s simplify our method madness by removing unnecessary returns from our code.
+# TASK: Write a method, square, that takes a number as an argument and implicitly returns the square of that number.
+# HINT: A Ruby method will automatically return the value of the last expression evaluated, so you just need to put the correct expression in the body of square—no return necessary!
+# You can calculate the square of a number n by writing either
+
+n * n
+n ** 2
