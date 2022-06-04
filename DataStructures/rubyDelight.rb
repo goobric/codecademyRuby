@@ -416,3 +416,9 @@ when "CSS"
 else
   puts "I don't know that language end!"
 end
+
+### Conditional Assignment
+# Perfect! Now let’s review conditional assignment. We’ll take a break from strict editing mode and let you do a bit more writing.
+# TASK: Create a variable called favorite_animal and conditionally assign it to a string containing the name of your favorite animal.
+# HINT: Remember, the conditional assignment operator is ||=
+favorite_animal ||= "lion"
