@@ -50,3 +50,8 @@ fibs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 doubled_fibs = fibs.collect { |x| x * 2 }
 puts doubled_fibs
+
+Learning to Yield
+Why do some methods accept a block and others don’t? It’s because methods that accept blocks have a way of transferring control from the calling method to the block and back again. We can build this into the methods we define by using the yield keyword.
+TASK: Check out the code in the editor. We’ve set up a series of puts statements so you can see when we’re in the block_test method and when we’re in the block passed to it. Click Run to see the result!
+
