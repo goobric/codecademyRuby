@@ -422,3 +422,5 @@ end
 # TASK: Create a variable called favorite_animal and conditionally assign it to a string containing the name of your favorite animal.
 # HINT: Remember, the conditional assignment operator is ||=
 favorite_animal ||= "lion"
+# solution
+another_animal ||= "cat"
