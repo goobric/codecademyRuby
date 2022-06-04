@@ -377,3 +377,23 @@ puts name == "Matz" ? "Hi Dad!" : "Who are you?"
 # Solution:
 1 < 2
 puts 1 < 2 ? "One is less than two!" : "One is not less than two"
+
+### In Case of Many Options
+# Regular if/else statements aren’t the only ones we can refactor, though—a chain of if/elsif/else statements can clean up really nicely, too!
+# TASK: Refactor the if/elsif/else statement in the editor into a tidy case statement.
+puts "What's your favorite language?"
+language = gets.chomp
+
+if language == "Ruby"
+  puts "Ruby is great for web apps!"
+elsif language == "Python"
+  puts "Python is great for science."
+elsif language == "JavaScript"
+  puts "JavaScript makes websites awesome."
+elsif language == "HTML"
+  puts "HTML is what websites are made of!"
+elsif language == "CSS"
+  puts "CSS makes websites pretty."
+else
+  puts "I don't know that language!"
+end
