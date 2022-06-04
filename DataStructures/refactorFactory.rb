@@ -76,4 +76,14 @@ first_n_primes(10)
 # TASK: Find the unnecessary return keyword and remove it.
 remove the return word from the Prime.first n statement
 
+# TASK: Feel free to play around with the code for as long as you like, then click Run to complete this project!
 
+require 'prime'   # This is a module. We'll cover these soon!
+
+def first_n_primes(n)
+  return "n must be an integer." unless n.is_a? Integer
+  return "n must be greater than 0." if n <= 0
+  Prime.first n
+end
+
+first_n_primes(10)
