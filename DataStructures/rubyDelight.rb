@@ -352,3 +352,6 @@ action if boolean
 if 1 < 2
   puts "One is less than two!"
 end
+# [action if boolean] {|1<2| puts "One is less than two!"}
+# Sol
+puts "One is less than two!" if 1 < 2
