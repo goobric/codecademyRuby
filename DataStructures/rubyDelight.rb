@@ -236,3 +236,22 @@ my_array.each { |even?| puts even}
 my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 my_array.each { |num| puts num unless num % 2 !=0 }
+
+### Up the Down Staircase
+# If we know the range of numbers we’d like to include, we can use .upto and .downto.
+# This is a much more Rubyist solution than trying to use a for loop that stops when a counter variable hits a certain value.
+# We might use .upto to print out a specific range of values:
+
+95.upto(100) { |num| print num, " " }
+# Prints from 95 96 97 98 99 upto 100
+
+# and we can use .downto to do the same thing with descending values.
+# Do you think .upto and .downto work on the alphabet? Only one way to find out!
+
+# TASK: Use .upto to puts the capital letters "L" through "P".
+# (Make sure to use puts and not print, so each letter is on its own line!)
+# HINT:
+# If you wanted to do the entire alphabet, you would do this:
+
+rb "A".upto("Z") { |letter| puts letter }
+  
