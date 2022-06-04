@@ -437,3 +437,20 @@ end
 
 n * n
 n ** 2
+
+### 'For' Shame!
+# Last one: let’s do something about the decidedly un-Ruby for loop in the editor.
+
+10.times do
+  puts "Knock knock."
+  puts "Who's there?"
+end
+
+# TASK: Let’s finish up by refactoring the for loop below to use .times instead.
+for i in (1..3)
+  puts "I'm a refactoring master!"
+end
+
+3.times do
+  puts "I'm a refactoring master!"
+end
