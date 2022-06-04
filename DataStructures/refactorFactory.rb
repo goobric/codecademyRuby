@@ -36,4 +36,15 @@ if n <= 0
 end
 
 # Both blocks can be simplified using the zen of Ruby!
+# TASK: Refactor the code in the editor to use single-line ifs and unlesss.
+# HINT: Your if and unless statements should be of the form:
+
+action if boolean
+action unless boolean
+
+# Remember, you don’t need an end with a single-line if or unless!
+puts "n must be an integar" unless n.is_a?
+ 
+puts "n must be greater than 0." if n <= 0
+
 
