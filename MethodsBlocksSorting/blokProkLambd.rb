@@ -206,3 +206,20 @@ proc_name = Proc.new do
   puts "Text"
 end
 
+## Answer
+def greeter(hi)
+    yield(hi)
+end
+  
+phrase = Proc.new do
+    puts "Hello there!"
+end
+
+## Solution
+def greeter
+  yield
+end
+
+phrase = Proc.new { puts "Hello there!" }
+
+greeter(&phrase)
