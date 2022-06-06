@@ -140,7 +140,24 @@ cube = Proc.new { |x| x ** 3 }
 
 floats = [1.2, 3.45, 0.91, 7.727, 11.42, 482.911]
 # Write your code below this line!
-
+round_down = Proc.new {|float|float.floor}
 # Write your code above this line!
 ints = floats.collect(&round_down)
 print ints
+
+Why Procs?
+Why bother saving our blocks as procs? There are two main advantages:
+Procs are full-fledged objects, so they have all the powers and abilities of objects. (Blocks do not.)
+Unlike blocks, procs can be called over and over without rewriting them. This prevents you from having to retype the contents of your block every time you need to execute a particular bit of code.
+
+TASK: Check out the code in the editor. Woof, we had to rewrite that block a bunch of times! Remove the blocks and replace them with a proc called over_4_feet so that the code in the block only needs to be written once.
+HINT: Your proc should look something like this:
+
+over_4_feet = Proc.new do |height|
+  # Include rest of block code here
+end
+
+Make sure that when you update each .select that you pass it your proc with the preceding &, like so:
+
+group_1.select(&over_4_feet)
+
