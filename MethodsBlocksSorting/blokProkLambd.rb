@@ -140,3 +140,7 @@ cube = Proc.new { |x| x ** 3 }
 
 floats = [1.2, 3.45, 0.91, 7.727, 11.42, 482.911]
 # Write your code below this line!
+
+# Write your code above this line!
+ints = floats.collect(&round_down)
+print ints
