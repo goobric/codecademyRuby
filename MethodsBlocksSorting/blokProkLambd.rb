@@ -257,4 +257,6 @@ nums = strings.map(&:to_i)
 # Your code should look just like the example, only it should call &:to_s instead of &:to_i.
 numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-strings_array = 
+strings_array = numbers_array.map(&:to_s)
+
+puts strings_array
