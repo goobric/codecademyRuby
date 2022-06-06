@@ -230,7 +230,7 @@ greeter(&phrase)
 # However, there’s an even easier way.
 # Unlike blocks, we can call procs directly by using Ruby’s .call method. Check it out!
 
-test = Proc.new { # does something }
+test = Proc.new { does something }
 test.call
 # does that something!
 
@@ -241,3 +241,20 @@ test.call
 hi = Proc.new {puts "Hello!"}
 hi.call
 puts "Hello!"
+
+### Symbols, Meet Procs
+# Now that you’re learning some of the more complex parts of the Ruby language, you can combine them to work some truly arcane magicks.
+# For instance, remember when we told you that you could pass a Ruby method name around with a symbol? Well, you can also convert symbols to procs using that handy little &.
+
+strings = ["1", "2", "3"]
+nums = strings.map(&:to_i)
+# ==> [1, 2, 3]
+
+# By mapping &:to_i over every element of strings, we turned each string into an integer!
+# TASK:
+# Using the example in the instructions as a guide, use collect or map to create the strings_array from the numbers_array. Each element of strings_array should be the string version of the corresponding element from the numbers_array (that is, it should go ["1", "2", "3"... "10"]).
+# HINT:
+# Your code should look just like the example, only it should call &:to_s instead of &:to_i.
+numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+strings_array = 
