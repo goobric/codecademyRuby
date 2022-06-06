@@ -91,4 +91,4 @@ yield_name("Eric") { |n| puts "My name is #{n}." }
   
 # Now call the method with your name!
 
-
+yield_name("Mika") { |n| puts "My name is #{n}." }
