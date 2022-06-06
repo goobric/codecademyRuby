@@ -237,3 +237,7 @@ test.call
 # Remember: there’s always more than one way to do something in Ruby.
 # HINT:
 # Go ahead and create a proc called hi that puts "Hello!", then .call it!
+# Solution:
+hi = Proc.new {puts "Hello!"}
+hi.call
+puts "Hello!"
