@@ -398,3 +398,19 @@ ints = odds_n_ends.select {|x|x.is_a? Integer}
 
 puts ints
 
+### TASK:
+# Create a proc called under_100 that checks if a number it’s passed is less than 100. (We’ll handle passing this proc the .select method in the next exercise—we won’t need to do anything with the ages array just yet.)
+# HINT:
+# Remember, proc syntax looks like this:
+
+my_proc = Proc.new { # block }
+
+# or
+
+my_proc = Proc.new do
+  # block
+end
+
+# The # block bit just needs to check whether the number passed is < 100!
+
+
