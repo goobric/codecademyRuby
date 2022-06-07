@@ -260,3 +260,19 @@ numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 strings_array = numbers_array.map(&:to_s)
 
 puts strings_array
+
+### The Ruby Lambda
+
+# Like procs, lambdas are objects.
+# The similarities don’t stop there: with the exception of a bit of syntax and a few behavioral quirks, lambdas are identical to procs.
+# Check out the code in the editor. See the lambda bit? Typing
+
+lambda { puts "Hello!" }
+
+# Is just about the same as
+
+Proc.new { puts "Hello!" }
+
+# In the example to the right, when we pass the lambda to lambda_demo, the method calls the lambda and executes its code.
+# Now that you know how blocks and procs work, you should be able to guess what this lambda will puts to the console.
+
