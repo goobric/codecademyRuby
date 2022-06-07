@@ -336,3 +336,15 @@ puts batman_ironman_lambda
 
 # TASK: See how the proc says Batman will win? This is because it returns immediately, without going back to the batman_ironman_proc method.
 # Our lambda, however, goes back into the method after being called, so the method returns the last code it evaluates: "Iron Man will win!"
+
+### Now You Try!
+# You’ve written your own lambda and seen how to pass it to a method. Now it’s time for you to write a lambda and pass it to a method!
+# If you think this will be a lot like what you’ve already done with procs, you’re exactly right. Just like with procs, we’ll need to put & at the beginning of our lambda name when we pass it to the method, since this will convert the lambda into the block the method expects.
+# That symbolize lambda was pretty cool. Let’s riff on it with a lambda that checks to see if each element in an array is a symbol. We can do this checking with the .is_a? method, which returns true if an object is the type of object named and false otherwise:
+
+:hello.is_a? Symbol
+# ==> true
+
+The word Symbol has to be capitalized when you’re doing an .is_a? check!
+
+
