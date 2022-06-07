@@ -294,5 +294,12 @@ lambda { |param| block }
 # On line 4, create a new variable called symbolize. In symbolize, store a lambda that takes one parameter and calls .to_sym on that parameter.
 # We then use symbolize with the .collect method to convert the items in strings to symbols!
 
+strings = ["leonardo", "donatello", "raphael", "michaelangelo"]
+# Write your code below this line!
 
+
+
+# Write your code above this line!
+symbols = strings.collect(&symbolize)
+print symbols
 
