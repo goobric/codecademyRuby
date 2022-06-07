@@ -297,9 +297,16 @@ lambda { |param| block }
 strings = ["leonardo", "donatello", "raphael", "michaelangelo"]
 # Write your code below this line!
 
-
+symbolize = lambda {|x| x.to_sym}
 
 # Write your code above this line!
 symbols = strings.collect(&symbolize)
 print symbols
+
+# HINT: You can use either .to_sym or .intern to convert a string to a symbol.
+# Your code should look something like this:
+
+symbolize = lambda { |x| x.magic! }
+
+# Where x.magic! is where you convert each element of the array to a symbol.
 
