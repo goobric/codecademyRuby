@@ -380,9 +380,21 @@ puts symbols
 # TASK: The odds_n_ends array is full of all sorts of objects, but we only want the integers (numbers without decimal bits).
 # Create a new variable, ints, and store the result of calling odds_n_ends.select method with a block that checks if the element .is_a? Integer.
 # puts ints at the end of the file in order to see the final contents of the array.
+# HINT: Your code should look something like this:
+
+ints = odds_n_ends.select { block }
+
+# Make sure to capitalize Integer in your .is_a? check!
+
 odds_n_ends = [:weezard, 42, "Trady Blix", 3, true, 19, 12.345]
 
 # Add your code below!
+# ints_filter = lamdba {|num| num.is_a? Integer}
+# ints = odds_n_ends.select(&ints_filter)
+# odds_n_ends = [:weezard, 42, "Trady Blix", 3, true, 19, 12.345]
+# puts ints
 
+ints = odds_n_ends.select {|x|x.is_a? Integer}
 
+puts ints
 
