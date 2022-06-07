@@ -366,5 +366,23 @@ my_array = ["raindrops", :kettles, "whiskers", :mittens, :packages]
 
 puts symbols
 
+### Quick Review
+# All this talk of blocks, procs, and lambdas might have your head spinning. Let’s take a minute to clarify exactly what each one is:
+# A block is just a bit of code between do..end or {}. It’s not an object on its own, but it can be passed to methods like .each or .select.
+# A proc is a saved block we can use over and over.
+# A lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately.
+# There are obviously lots of cases in which blocks, procs, and lambdas can do similar work, but the exact circumstances of your program will help you decide which one you want to use.
+# Instructions
+# Make sense? Good!
+
+# Been Around the Block a Few Times
+# You’re basically a Ruby block master at this point. This should be pretty easy!
+# TASK: The odds_n_ends array is full of all sorts of objects, but we only want the integers (numbers without decimal bits).
+# Create a new variable, ints, and store the result of calling odds_n_ends.select method with a block that checks if the element .is_a? Integer.
+# puts ints at the end of the file in order to see the final contents of the array.
+odds_n_ends = [:weezard, 42, "Trady Blix", 3, true, 19, 12.345]
+
+# Add your code below!
+
 
 
