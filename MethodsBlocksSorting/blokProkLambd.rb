@@ -282,3 +282,17 @@ def lambda_demo(a_lambda)
 end
 
 lambda_demo(lambda { puts "I'm the lambda!" })
+
+## Lambda Syntax
+# Lambdas are defined using the following syntax:
+
+lambda { |param| block }
+
+# Lambdas are useful in the same situations in which you’d use a proc. We’ll cover the differences between lambdas and procs in the next exercise; in the meantime, let’s get a little practice in with the lambda syntax.
+
+# TASK: We have an array of strings in the editor, but we want an array of symbols.
+# On line 4, create a new variable called symbolize. In symbolize, store a lambda that takes one parameter and calls .to_sym on that parameter.
+# We then use symbolize with the .collect method to convert the items in strings to symbols!
+
+
+
