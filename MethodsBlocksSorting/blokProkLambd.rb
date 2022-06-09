@@ -418,5 +418,14 @@ ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
 # under_100 = Proc.new {|ages|ages.select? <100}
 Solution
 under_100 = Proc.new { |x| x < 100 }
+youngsters = ages.select(&under_100)
 
+### Pass Proc to a Method
+# Now we’ll be using the ages array. Create a variable called youngsters and set it equal to calling .select on ages, and pass in your under_100 proc to filter for the ages that are less than one hundred. Remember to pass &under_100 to convert your proc to a block!
 
+puts youngsters at the end of the file in order to see the final contents of the array.
+# HINT: Your syntax should look like this:
+
+youngsters = ages.select(&your_proc)
+
+# Where your_proc is the under_100 proc. Don’t forget the ampersand! LINE 421
