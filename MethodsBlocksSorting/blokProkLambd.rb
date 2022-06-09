@@ -403,7 +403,7 @@ puts ints
 # HINT:
 # Remember, proc syntax looks like this:
 
-my_proc = Proc.new { # block }
+my_proc = Proc.new { block }
 
 # or
 
@@ -412,5 +412,11 @@ my_proc = Proc.new do
 end
 
 # The # block bit just needs to check whether the number passed is < 100!
+ages = [23, 101, 7, 104, 11, 94, 100, 121, 101, 70, 44]
+
+# Add your code below!
+# under_100 = Proc.new {|ages|ages.select? <100}
+Solution
+under_100 = Proc.new { |x| x < 100 }
 
 
