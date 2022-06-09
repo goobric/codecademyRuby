@@ -429,3 +429,33 @@ puts youngsters at the end of the file in order to see the final contents of the
 youngsters = ages.select(&your_proc)
 
 # Where your_proc is the under_100 proc. Don’t forget the ampersand! LINE 421
+
+### Creating a Lambda
+# Second verse: same as the first! Let’s go ahead and make ourselves a lambda.
+# TASK: Create a lambda called first_half that checks if a hash value is less than (that is, earlier in the alphabet than) “M”. (No need to do anything with the crew hash yet.) Make sure to use a capital “M,” since we’ll be checking capitalized names! Because it will be checking a hash, your lambda should include |key, value| instead of just |value|.
+
+# HINT: Remember, lambda syntax looks like this:
+
+my_lambda = lambda { |k,v| # code }
+
+my_lambda = lambda do |k,v|
+  # code
+end
+
+# Where # code is the bit that checks if the hash value is < "M".
+crew = {
+  captain: "Picard",
+  first_officer: "Riker",
+  lt_cdr: "Data",
+  lt: "Worf",
+  ensign: "Ro",
+  counselor: "Troi",
+  chief_engineer: "LaForge",
+  doctor: "Crusher"
+}
+# Add your code below!
+# first_half = lambda {|k,v| <"M"}
+first_half = lambda { |x,y| y<"M"}
+
+
+
