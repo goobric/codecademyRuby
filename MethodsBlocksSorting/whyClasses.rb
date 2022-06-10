@@ -355,8 +355,10 @@ class Message
 end
 my_message = Message.new("Ian", "Alex")
 class Email < Message
-    def initialize(subject)
-      @subject = subject
+    def initialize (from, to)
+        super
+        # def initialize(subject)
+      # @subject = subject
     end
 end
 
@@ -379,3 +381,9 @@ end
 rb def initialize(subject)
     @subject = subject
 end
+
+## Super Super
+# You’re a champion! Our last topic: Ruby’s super keyword. (We’ve decided we liked Message‘s initialize method after all.)
+# TASK: To finish this lesson, go ahead and remove the subject parameter and @subject instance variable from Email.
+# Pass Email‘s initialize method the same two parameters passed to Message‘s—from and to—and add the super keyword as the only line of code in the body of Email‘s initialize method.
+# HINT: The Email class should contain a single method, initialize, which now takes two variables: from and to. The only line of code in the body of initialize should be a single word: super!
