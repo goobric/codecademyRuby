@@ -122,3 +122,22 @@ puts "Manufacturer: #{$manufacturer}"
   
 puts "Files: #{Computer.display_files}"
 # @@files belongs to the Computer class.
+
+## Naming Your Variables
+# Recall that instance variables begin with an @. This isn’t just a Ruby convention—it’s part of the syntax! Always start your instance variables with @.
+# Class variables are like instance variables, but instead of belonging to an instance of a class, they belong to the class itself. Class variables always start with two @s, like so: @@files.
+# Global variables can be declared in two ways. The first is one that’s already familiar to you: you just define the variable outside of any method or class, and voilà! It’s global. If you want to make a variable global from inside a method or class, just start it with a $, like so: $matz.
+# We’ll go through instance and class variables in more detail in a moment. First, let’s do a quick review of local and global scope.
+
+# TASK:
+# In the code below. The variable my_variable is inside a class, so it’s not reachable by the puts method outside it.
+# But you can fix this!
+# Use either of the two global variable tricks mentioned above.
+# Check the hint if you need more help.
+# HINT:
+# Move my_variable out of the class and into the global scope, or
+# Put a $ on the front of my_variable to make it global from inside the class. Remember to update both variables.
+class MyClass
+  my_variable = "Hello!"
+end
+
