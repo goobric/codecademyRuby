@@ -175,17 +175,17 @@ end
 
 class Person
     # Set your class variable to 0 on line 178
-    
+    @@people_count = 0
     
     def initialize(name)
       @name = name
       # Increment your class variable on line 183
-      
+      @@people_count += 1
     end
     
     def self.number_of_instances
       # Return your class variable on line 188
-      
+      @@people_count
     end
 end
   
