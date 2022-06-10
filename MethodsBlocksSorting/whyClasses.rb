@@ -134,12 +134,21 @@ puts "Files: #{Computer.display_files}"
 # But you can fix this!
 # Use either of the two global variable tricks mentioned above.
 # Check the hint if you need more help.
-# HINT:
+# HINT: LINE 141 and LINE 143 need to be Global
 # Move my_variable out of the class and into the global scope, or
 # Put a $ on the front of my_variable to make it global from inside the class. Remember to update both variables.
 class MyClass
   $my_variable = "Hello!"
 end
-puts my_variable
+puts $my_variable
+
+## For Instance...
+# Good! A caveat, though: global variables can be changed from anywhere in your program, and they are generally not a very good idea. It’s much better to create variables with limited scope that can only be changed from a few places!
+# For example, instance variables belong to a particular object (or “instance”)
+# Let’s get in some practice with instance variables! We’ve added our Person class from before to the editor.
+# TASK:
+# Add age and profession parameters to the initialize method, then set these equal to instance variables in the body of the method. Use the name/@name example as a guide.
+# HINT:
+# Make sure to include age and profession as parameters to initialize and set them equal to @age and @profession variables in the body of initialize, just like we’ve done with name (the parameter) and @name (the instance variable).
 
 
