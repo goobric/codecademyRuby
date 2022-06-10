@@ -39,6 +39,7 @@ end
 # Create a class called Person in the editor. Don’t put anything between class Person and end just yet.
 class Person
     def initialize(name)
+        @name = name
     end
 end
 
@@ -71,3 +72,10 @@ kitt = Car.new("Pontiac", "Trans Am")
 # Keeping parameters and instance variables straight can be tricky, so here’s a freebie. Your initialize method should look like this:
 
 rb def initialize(name) @name = name end
+
+## Instantiating Your First Object
+# Perfect! Now we’re ready to start creating objects.
+# We can create an instance of a class just by calling .new on the class name, like so:
+me = Person.new("Eric")
+# TASK:
+# Create a variable, matz, and set it equal to calling .new on your Person class. Pass .new the name “Yukihiro” as its only argument.
