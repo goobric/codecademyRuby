@@ -363,3 +363,14 @@ my_message = Message.new("Ian", "Alex")
 # Create an instance of your Message class using Message.new with whatever from and to arguments you want! Store the result in my_message.
 # HINTyou can create an instance of an object from a class with
 rb obj = ClassName.new(parameters)
+
+# TASK: Create a second class, Email, that inherits from Message. Give it its own initialize method that takes just one parameter, subject, and has one instance variable, @subject, set equal to subject.
+# HINT: This should look very similar to the code you’ve already written. Patterns, patterns everywhere!
+# Inheritance looks like this in Ruby:
+DerivedClass < BaseClass
+    # some class function
+end
+# initialize metod for Email should look like this:
+rb def initialize(subject)
+    @subject = subject
+end
