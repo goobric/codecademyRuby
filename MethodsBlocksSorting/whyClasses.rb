@@ -138,6 +138,8 @@ puts "Files: #{Computer.display_files}"
 # Move my_variable out of the class and into the global scope, or
 # Put a $ on the front of my_variable to make it global from inside the class. Remember to update both variables.
 class MyClass
-  my_variable = "Hello!"
+  $my_variable = "Hello!"
 end
+puts my_variable
+
 
