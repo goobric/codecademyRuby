@@ -26,3 +26,27 @@ javascript = Language.new("JavaScript", "Brendan Eich")
 ruby.description
 python.description
 javascript.description
+
+### Class Syntax
+# A basic class consists only of the class keyword and the name of the class. Check it out:
+
+class NewClass
+    # Class magic here
+end
+
+# Our NewClass has the ability to create new Ruby objects of class NewClass (just like "Hello!" is a String and 4 is a Fixnum). By convention, class names start with a capital letter and use CamelCase instead of relying_on_underscores.
+# TASK:
+# Create a class called Person in the editor. Don’t put anything between class Person and end just yet.
+class Person
+    def initialize(name)
+    end
+end
+
+## Classing It Up
+# We’d like our classes to do more than… well, nothing, so we’ll have to add some code between our class Person and end.
+# You may have noticed in our example back in the first exercise that we started our class definition off with a method called initialize. You can think of initialize as the function that “boots up” each object the class creates.
+## TASK: LINE 41
+# Go ahead and define an initialize method for your Person class. No need to put anything in the method body just yet.
+## HINT: Your Person class should include an initialize method, like so:
+rb def initialize end
+
