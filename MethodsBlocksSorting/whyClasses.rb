@@ -354,6 +354,11 @@ class Message
     end
 end
 my_message = Message.new("Ian", "Alex")
+class Email < Message
+    def initialize(subject)
+      @subject = subject
+    end
+end
 
 # TASK: Give your Message class a @@messages_sent class variable and set it equal to 0.
 # In the body of your initialize method, increment this value by 1 so that each time a new Message object is created, @@messages_sent will increase by 1.
