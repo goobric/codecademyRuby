@@ -275,3 +275,9 @@ class Creature
       return "Punch to the chops!"
     end
 end
+
+class Dragon < Creature
+    def fight
+        return "Breathes fire!"
+    end
+end
