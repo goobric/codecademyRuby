@@ -38,8 +38,10 @@ end
 # TASK:
 # Create a class called Person in the editor. Don’t put anything between class Person and end just yet.
 class Person
-    def initialize(name)
+    def initialize(name, age, profession)
         @name = name
+        @age = age
+        @profession = profession
     end
 end
 matz = Person.new("Yukihiro")
@@ -146,7 +148,7 @@ puts $my_variable
 # Good! A caveat, though: global variables can be changed from anywhere in your program, and they are generally not a very good idea. It’s much better to create variables with limited scope that can only be changed from a few places!
 # For example, instance variables belong to a particular object (or “instance”)
 # Let’s get in some practice with instance variables! We’ve added our Person class from before to the editor.
-# TASK:
+# TASK: LINE 43
 # Add age and profession parameters to the initialize method, then set these equal to instance variables in the body of the method. Use the name/@name example as a guide.
 # HINT:
 # Make sure to include age and profession as parameters to initialize and set them equal to @age and @profession variables in the body of initialize, just like we’ve done with name (the parameter) and @name (the instance variable).
