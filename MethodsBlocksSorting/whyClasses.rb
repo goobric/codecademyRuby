@@ -231,3 +231,21 @@ end
 err = SuperBadError.new
 err.display_error
 
+## Inheritance Syntax
+# In Ruby, inheritance works like this:
+
+class DerivedClass < BaseClass
+  # Some stuff!
+end
+
+# The derived class is the new class you’re making and the base class is the class from which that new class inherits. You can read “<“ as “inherits from.”
+# TASK:
+# We’ve created an Application class in the editor.
+# Create your own class, MyApp, that inherits from Application.
+# No need to put anything inside your class definition just yet!
+# HINT: Remember, an empty class is just
+
+rb class ClassName end
+
+
+
