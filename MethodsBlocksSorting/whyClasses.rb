@@ -4,3 +4,25 @@
 # ==> 4
 # the "Matz" object is a string with a .length method and a length attribute of 4. We’ll learn how to build our own objects with their own methods and internal variables in the next few exercises.
 # But what exactly makes "Matz" a string? The fact that it’s an instance of the String class. A class is just a way of organizing and producing objects with similar attributes and methods.
+# TASK:
+# Check out the code in the editor to the right. We’ve defined our own class, Language, and created ruby, python, and javascript instances.
+# Run the code to see how they work!
+# Move on when you’re ready to get started creating classes and objects of your own.
+class Language
+    def initialize(name, creator)
+      @name = name
+      @creator = creator
+    end
+      
+    def description
+      puts "I'm #{@name} and I was created by #{@creator}!"
+    end
+end
+  
+ruby = Language.new("Ruby", "Yukihiro Matsumoto")
+python = Language.new("Python", "Guido van Rossum")
+javascript = Language.new("JavaScript", "Brendan Eich")
+  
+ruby.description
+python.description
+javascript.description
