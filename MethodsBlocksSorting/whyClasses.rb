@@ -173,3 +173,23 @@ end
 
 # For the last step, you just need to return @@people_count. Remember, Ruby can return implicitly, so you can simply type @@people_count if you want!
 
+class Person
+    # Set your class variable to 0 on line 178
+    
+    
+    def initialize(name)
+      @name = name
+      # Increment your class variable on line 183
+      
+    end
+    
+    def self.number_of_instances
+      # Return your class variable on line 188
+      
+    end
+end
+  
+matz = Person.new("Yukihiro")
+dhh = Person.new("David")
+  
+puts "Number of Person instances: #{Person.number_of_instances}"
