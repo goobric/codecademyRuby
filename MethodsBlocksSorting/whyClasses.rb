@@ -353,7 +353,13 @@ class Message
         @@messages_sent += 1
     end
 end
+my_message = Message.new("Ian", "Alex")
 
 # TASK: Give your Message class a @@messages_sent class variable and set it equal to 0.
 # In the body of your initialize method, increment this value by 1 so that each time a new Message object is created, @@messages_sent will increase by 1.
 # Don’t create any instances of your class just yet!
+## create Instance of Message class
+# After your class, create a variable called my_message.
+# Create an instance of your Message class using Message.new with whatever from and to arguments you want! Store the result in my_message.
+# HINTyou can create an instance of an object from a class with
+rb obj = ClassName.new(parameters)
