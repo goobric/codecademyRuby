@@ -153,4 +153,23 @@ puts $my_variable
 # HINT:
 # Make sure to include age and profession as parameters to initialize and set them equal to @age and @profession variables in the body of initialize, just like we’ve done with name (the parameter) and @name (the instance variable).
 
+## Twice the @, Twice as Classy
+# We can create class variables by starting a variable name with two @ symbols.
+# Class variables are attached to entire classes, not just instances of classes, like so:
+class MyClass
+    @@class_variable
+end
+
+# Because there’s only one copy of a class variable shared by all instances of a class, we can use them to pull off some cool Ruby tricks. For example, we can use a class variable to keep track of the number of instances of that class we’ve created. Let’s do that now!
+# TASK:
+# Let’s do three things:
+# - Create a class variable, @@people_count, on line 3, and set it equal to 0.
+# - Increment @@people_count on line 8.
+# - Return @@people_count on line 13 so that our puts on line 20 will print out the number of people created so far.
+# HINT
+# For the first step, you just need to declare a @@people_count variable and set it to 0.
+# For the second step, you just need to increment @@people_count by adding one to it. We’d use
+@@people_count += 1
+
+# For the last step, you just need to return @@people_count. Remember, Ruby can return implicitly, so you can simply type @@people_count if you want!
 
