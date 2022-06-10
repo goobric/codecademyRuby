@@ -278,7 +278,9 @@ end
 
 class Dragon < Creature
     def fight
-        return "Breathes fire!"
+        # return "Breathes fire!"
+        puts "Instead of breathing fire..."
+        super
     end
 end
 
@@ -295,7 +297,7 @@ class DerivedClass < BaseClass
 end
 # When you call super from inside a method, that tells Ruby to look in the superclass of the current class and find a method with the same name as the one from which super is called.
 # If it finds it, Ruby will use the superclass’ version of the method.
-# TASK
+# TASK LINE 281
 # We decided we want to do some chops-punching after all! Let’s do two things:
 # - Add puts "Instead of breathing fire..." as the first line in our Dragon‘s fight method.
 # - Replace the return statement inside Dragon‘s definition of fight with the keyword super. (No need to pass any arguments to super, since Creature‘s fight method doesn’t take any.)
