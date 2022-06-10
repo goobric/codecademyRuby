@@ -42,6 +42,7 @@ class Person
         @name = name
     end
 end
+matz = Person.new("Yukihiro")
 
 ## Classing It Up
 # We’d like our classes to do more than… well, nothing, so we’ll have to add some code between our class Person and end.
@@ -77,5 +78,5 @@ rb def initialize(name) @name = name end
 # Perfect! Now we’re ready to start creating objects.
 # We can create an instance of a class just by calling .new on the class name, like so:
 me = Person.new("Eric")
-# TASK:
+# TASK: LINE 45
 # Create a variable, matz, and set it equal to calling .new on your Person class. Pass .new the name “Yukihiro” as its only argument.
