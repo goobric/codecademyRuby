@@ -106,3 +106,27 @@ end
 
 # private methods are just that: they’re private to the object where they are defined. This means you can only call these methods from other code inside the object. Another way to say this is that the method cannot be called with an explicit receiver. You’ve been using receivers all along—these are the objects on which methods are called! Whenever you call object.method, object is the receiver of the method.
 # In order to access private information, we have to create public methods that know how to get it. This separates the private implementation from the public interface, and we’ll go over this in more detail in the next two exercises.
+
+# TASK5 ATTRIBUTE READER & WRITER
+# Ruby needs methods in order to access attributes. For instance, if we want to access a @name instance variable, we had to write something like
+def name
+  @name
+end
+# Well, no longer! We can use attr_reader to access a variable and attr_writer to change it. If we write
+class Person
+    attr_reader :name
+    attr_writer :name
+    def initialize(name)
+      @name = name
+    end
+end
+  
+# Ruby does something like this for us automatically:
+def name
+    @name
+end
+   
+def name=(value)
+    @name = value
+end
+
