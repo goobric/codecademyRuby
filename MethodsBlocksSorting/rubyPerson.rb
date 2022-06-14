@@ -130,3 +130,22 @@ def name=(value)
     @name = value
 end
 
+# Like magic, we can read and write variables as we please! We just pass our instance variables (as symbols) to attr_reader or attr_writer.
+# (That name= might look funny, but you’re allowed to put an = sign in a method name. That’s just a Ruby convention saying, “hey, this method sets a value!”)
+We’ve brought back our Person class with a method for getting @name and a method for changing his or her @job.
+Go ahead and remove the name and job= methods and add an attr_reader for :name and an attr_writer for :job.
+# HINT
+You’ll want to remove the name and job= methods from your class entirely, then add attr_reader for :name and attr_writer for :job at the top. For example, your attr_reader will look like this:
+
+```rb class Person attr_reader :name
+All the other class stuff
+
+end```
+class Person2
+  attr_reader :name
+  attr_writer :job
+  def initialize(name, job)
+    @name = name
+    @job = job
+  end
+end
