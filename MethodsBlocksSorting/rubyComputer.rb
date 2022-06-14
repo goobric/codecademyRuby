@@ -24,6 +24,8 @@ class Computer
     end
 end
 my_computer = Computer.new("mika", 95173)
+my_computer.create("compFile.txt")
+puts "Users: #{Computer.get_users}"
 
 # TASK2
 # Update initialize to take two parameters, username and password. In the body of initialize, set the instance variables @username and @password (respectively) to these parameters.
@@ -88,3 +90,7 @@ emma = Person.new("emma")
 # Remember, we instantiate a class like so:
 
 rb my_instance = ClassName.new(arguments)
+
+# TASK7
+# You’ve got your very own Computer class that generates virtual computer instances.
+# Feel free to play around with your class. What if you add a method that updates files? Or deletes them? What if you want to add additional parameters to initialize or create?
