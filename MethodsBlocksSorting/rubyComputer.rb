@@ -23,6 +23,7 @@ class Computer
         @@users
     end
 end
+my_computer = Computer.new("mika", 95173)
 
 # TASK2
 # Update initialize to take two parameters, username and password. In the body of initialize, set the instance variables @username and @password (respectively) to these parameters.
