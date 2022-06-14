@@ -68,3 +68,22 @@ def ClassName.method_name
 end
 # Where ClassName is Computer, method_name is get_users, and @@class_variable is @@users.
 
+# TASK6
+# Last step: let’s create an instance of our Computer class.
+# You’ve done this before, but here’s a refresher.
+
+class Person
+  def initialize(name)
+    @name = name
+  end
+end
+ 
+emma = Person.new("emma")
+
+# In the example above, we first define a Person class with an initialize method.
+# Then, we create a new instance of Person and store it in a new variable called emma.
+#After your class, create a new instance of Computer and store it in a new variable called my_computer. Feel free to use whatever username and password you like for your arguments!
+# HINT
+# Remember, we instantiate a class like so:
+
+rb my_instance = ClassName.new(arguments)
