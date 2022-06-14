@@ -29,6 +29,18 @@ eric.bank_account_number
 # Private methods, on the other hand, are for your classes to do their own work undisturbed. They don’t want anyone asking them anything, so they make themselves unreachable!
 # the code above. We’ve created a public about_me method and a private bank_account_number method. Click Run to see what happens when we try to call the bank_account_number method from outside the class!
 
+class Dog
+    def initialize(name, breed)
+    @name = name
+    @breed = breed
+    end
+
+    public
+    def bark
+        puts "Woof!"
+    end 
+end
+
 # TASK2 Build a Class
 class ClassName
     def method_name(parameter)
@@ -52,3 +64,21 @@ class MyClass
     @params = params
   end
 end
+
+# TASK3 PUBLIC & PRIVATE
+# Methods are public by default in Ruby, so if you don’t specify public or private, your methods will be public. In this case, however, we want to make it clear to people reading our code which methods are public. We do this by putting public before our method definitions, like so:
+class ClassName
+    # Some class stuff
+    public
+    def public_method
+        # public_method stuff
+    end
+end
+# Note that everything after the public keyword through the end of the class definition will now be public unless we say otherwise. (We’ll say otherwise in the next exercise.)
+# For now, let’s add a public method called bark to Dog. The bark method should puts "Woof!".
+# HINT
+# Remember, to explicitly make a method public, you just need to use the public keyword:
+```rb class ClassName
+Some class stuff
+
+public def public_method # public_method stuff end end```
