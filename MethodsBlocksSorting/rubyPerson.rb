@@ -212,7 +212,7 @@ puts Date.today
 # Please include Math on line 2.
 
 class Angle
-  
+    include Math
     attr_accessor :radians
     
     def initialize(radians)
@@ -223,5 +223,8 @@ class Angle
       cos(@radians)
     end
 end
+acute = Angle.new(1)
+acute.cosine
+
     
     
