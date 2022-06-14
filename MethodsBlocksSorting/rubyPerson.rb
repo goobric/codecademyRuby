@@ -114,10 +114,12 @@ def name
 end
 # Well, no longer! We can use attr_reader to access a variable and attr_writer to change it. If we write
 class Person
-    attr_reader :name
-    attr_writer :name
-    def initialize(name)
+    # attr_reader :name
+    # attr_writer :name
+    attr_accessor :job
+    def initialize(name, job)
       @name = name
+      @job = job
     end
 end
   
