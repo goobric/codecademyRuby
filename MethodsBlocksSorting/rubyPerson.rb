@@ -134,10 +134,10 @@ end
 
 # Like magic, we can read and write variables as we please! We just pass our instance variables (as symbols) to attr_reader or attr_writer.
 # (That name= might look funny, but you’re allowed to put an = sign in a method name. That’s just a Ruby convention saying, “hey, this method sets a value!”)
-We’ve brought back our Person class with a method for getting @name and a method for changing his or her @job.
-Go ahead and remove the name and job= methods and add an attr_reader for :name and an attr_writer for :job.
-# HINT
-You’ll want to remove the name and job= methods from your class entirely, then add attr_reader for :name and attr_writer for :job at the top. For example, your attr_reader will look like this:
+# We’ve brought back our Person class with a method for getting @name and a method for changing his or her @job.
+# Go ahead and remove the name and job= methods and add an attr_reader for :name and an attr_writer for :job.
+# # HINT
+# You’ll want to remove the name and job= methods from your class entirely, then add attr_reader for :name and attr_writer for :job at the top. For example, your attr_reader will look like this:
 
 ```rb class Person attr_reader :name
 All the other class stuff
@@ -150,4 +150,22 @@ class Person2
     @name = name
     @job = job
   end
+end
+
+# TASK6
+You can think of a module as a toolbox that contains a set methods and constants. There are lots and lots of Ruby tools you might want to use, but it would clutter the interpreter to keep them around all the time. For that reason, we keep a bunch of them in modules and only pull in those module toolboxes when we need the constants and methods inside!
+You can think of modules as being very much like classes, only modules can’t create instances and can’t have subclasses. They’re just used to store things!
+Check out our example module in the editor. See how it has an approximation of pi stored in PI and a series of methods for calculating the circumference and area of a circle?
+
+module Circle
+
+    PI = 3.141592653589793
+    
+    def Circle.area(radius)
+      PI * radius**2
+    end
+    
+    def Circle.circumference(radius)
+      2 * PI * radius
+    end
 end
