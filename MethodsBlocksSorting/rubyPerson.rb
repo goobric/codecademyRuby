@@ -153,9 +153,9 @@ class Person2
 end
 
 # TASK6
-You can think of a module as a toolbox that contains a set methods and constants. There are lots and lots of Ruby tools you might want to use, but it would clutter the interpreter to keep them around all the time. For that reason, we keep a bunch of them in modules and only pull in those module toolboxes when we need the constants and methods inside!
-You can think of modules as being very much like classes, only modules can’t create instances and can’t have subclasses. They’re just used to store things!
-Check out our example module in the editor. See how it has an approximation of pi stored in PI and a series of methods for calculating the circumference and area of a circle?
+# You can think of a module as a toolbox that contains a set methods and constants. There are lots and lots of Ruby tools you might want to use, but it would clutter the interpreter to keep them around all the time. For that reason, we keep a bunch of them in modules and only pull in those module toolboxes when we need the constants and methods inside!
+# You can think of modules as being very much like classes, only modules can’t create instances and can’t have subclasses. They’re just used to store things!
+# Check out our example module in the editor. See how it has an approximation of pi stored in PI and a series of methods for calculating the circumference and area of a circle?
 
 module Circle
 
@@ -169,3 +169,17 @@ module Circle
       2 * PI * radius
     end
 end
+
+# TASK7 MODULE SYNTAX
+# You can pull in pre-existing modules (we’ll show you how soon!), but you can also make your own. Modules are super easy to make! You just use the module keyword, like so:
+
+module ModuleName
+  # Bits 'n pieces
+end
+
+# Like class names, module names are written in CapitalizedCamelCase, rather than lowercase_with_underscores.
+# It doesn’t make sense to include variables in modules, since variables (by definition) change (or vary). Constants, however, are supposed to always stay the same, so including helpful constants in modules is a great idea.
+# Ruby doesn’t make you keep the same value for a constant once it’s initialized, but it will warn you if you try to change it. Ruby constants are written in ALL_CAPS and are separated with underscores if there’s more than one word.
+# An example of a Ruby constant is PI, which lives in the Math module and is approximately equal to 3.141592653589793. We created our own PI in the previous exercise, but don’t worry: because they’re in separate modules, Ruby knows to keep them separate.
+# Create your own module called MyLibrary in the editor to the right. Include a constant called FAVE_BOOK and set it equal to a string naming your favorite book!
+
