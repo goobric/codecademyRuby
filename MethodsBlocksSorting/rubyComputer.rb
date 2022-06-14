@@ -19,6 +19,9 @@ class Computer
         @files[filename] = time
         puts "#{filename} was created by #{@username} at #{time} :-)"
     end
+    def Computer.get_users()
+        @@users
+    end
 end
 
 # TASK2
@@ -45,5 +48,23 @@ end
 #You can add the filename/time key/value pair to the @files hash with
 rb time = Time.now @files[filename] = time
 
+# TASK5
+# we could have a whole bunch of users creating files every which where, and we don’t have a way of getting to our @@users class variable! We’ll need to create a method to reach it.
+# Because @@users is a class variable, we’ll use a class method to grab it. Most of the methods you’ve seen so far are instance methods—they work on a particular instance/object, such as “matz” or “blixy”. A class method belongs to the class itself, and for that reason, it’s prefixed with the class name.
 
+class Machine
+  def Machine.hello
+    puts "Hello from the machine!"
+  end
+end
+
+# There’s a shortcut for this, which we’ll learn in a later lesson.
+# Add a new class method to your Computer class called Computer.get_users. It should have no parameters.
+# Your new Computer.get_users method should return the @@users class variable.
+# HINT
+# Your code should look something like this:
+def ClassName.method_name
+  @@class_variable
+end
+# Where ClassName is Computer, method_name is get_users, and @@class_variable is @@users.
 
