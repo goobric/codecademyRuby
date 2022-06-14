@@ -203,3 +203,25 @@ require 'module'
 # Go ahead and require 'date' on line 1 so the code on line 3 will work.
 require 'date'
 puts Date.today
+
+# TASK9 INCLUDED command
+# We can do more than just require a module, however. We can also include it!
+# Any class that includes a certain module can use those module’s methods!
+# A nice effect of this is that you no longer have to prepend your constants and methods with the module name. Since everything has been pulled in, you can simply write PI instead of Math::PI.
+# In our case, we want to use Math::cos but we don’t want to type Math::.
+# Please include Math on line 2.
+
+class Angle
+  
+    attr_accessor :radians
+    
+    def initialize(radians)
+      @radians = radians
+    end
+    
+    def cosine
+      cos(@radians)
+    end
+end
+    
+    
