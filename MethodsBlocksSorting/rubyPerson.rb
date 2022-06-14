@@ -201,3 +201,5 @@ require 'module'
     
 # We want to use the Ruby Date module to show today’s date, but we haven’t required it yet!
 # Go ahead and require 'date' on line 1 so the code on line 3 will work.
+require 'date'
+puts Date.today
