@@ -327,5 +327,7 @@ rb class ClassName private def private_method end end
 # Create your own module called Languages in the editor to the right. Include a constant called FAVE and set it equal to a string naming your favorite programming language!
 # Remember, you can create a module simply by typing
 rb module ModuleName end
-
-
+# Create your module below!
+module Languages
+    FAVE = "ruby"
+end
