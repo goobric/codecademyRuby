@@ -310,4 +310,15 @@ class Application
     def print_status
         puts "All systems go!"
     end
+    # add private methon here
+    private
+    def password
+        return 12345
+    end
 end
+
+# TASK13 somethings are kept PRIVATE method
+# In the code above; Below your public method, add a private method called password that returns the super secret password 12345.
+# HINT
+# Remember, we can make a private method with
+rb class ClassName private def private_method end end
