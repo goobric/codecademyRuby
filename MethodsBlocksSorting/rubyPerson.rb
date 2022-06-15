@@ -331,3 +331,22 @@ rb module ModuleName end
 module Languages
     FAVE = "ruby"
 end
+
+# TASK15 Mixin for the win
+# Finally, let’s include our Languages module in the Master class (on line 6) so that our favorite language gets printed to the console.
+# To include a module in a class, we need only type
+rb class ClassName include ModuleName end
+module Languages
+    FAVE = "Ruby"  # This is what you typed before, right? :D
+end
+  
+class Master
+    include Languages
+    def initialize; end
+    def victory
+      puts FAVE
+    end
+end
+  
+total = Master.new
+total.victory
