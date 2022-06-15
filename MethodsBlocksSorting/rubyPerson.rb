@@ -318,7 +318,14 @@ class Application
 end
 
 # TASK13 somethings are kept PRIVATE method
-# In the code above; Below your public method, add a private method called password that returns the super secret password 12345.
+# In the code above; Below your public method, add a private method called password that returns the super secret password 12345. from Line314
 # HINT
 # Remember, we can make a private method with
 rb class ClassName private def private_method end end
+
+# TASK14 MODULE magic
+# Create your own module called Languages in the editor to the right. Include a constant called FAVE and set it equal to a string naming your favorite programming language!
+# Remember, you can create a module simply by typing
+rb module ModuleName end
+
+
