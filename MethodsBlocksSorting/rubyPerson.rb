@@ -257,5 +257,29 @@ jiminy = Cricket.new("Jiminy")
 peter.jump
 jiminy.jump
 
-    
+# TASK10 IMITATING MULTIPLE INHERITANCE
+# Now you understand why we said mixins could give us the ability to mimic inheriting from more than one class: by mixing in traits from various modules as needed, we can add any combination of behaviors to our classes we like!
+# Create a module, MartialArts.
+# Inside, define a method called swordsman that just puts "I'm a swordsman."
+# On the first line inside Ninja and the first line inside Samurai, include MartialArts to mix this into both the Ninja and Samurai classes, thereby giving them the swordsman method.
+# Create your module here!
+
+
+
+
+
+class Ninja
+
+    def initialize(clan)
+      @clan = clan
+    end
+end
+  
+class Samurai
+  
+    def initialize(shogun)
+      @shogun = shogun
+    end
+end
+
     
