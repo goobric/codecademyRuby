@@ -63,7 +63,15 @@ class Account2
       puts pin_error
     end
   end
-  
+  def withdraw(pin_number, amount)
+    if pin_number == pin
+        @balance -= amount
+        puts "Withdrew #{amount}. New balance: $#{@balance}."
+    else
+        puts pin_error
+    end
+  end
+
   private
   
   def pin
@@ -79,11 +87,17 @@ end
 # Add two private methods to your Account class, pin and pin_error.pin should take no arguments and set an instance variable, @pin, equal to the PIN number 1234.
 # pin_error should take no arguments and should simply return the string "Access denied: incorrect PIN."
 
-# TASK3 DISPLAYING THE BALANCE
+# TASK3 DISPLAYING THE BALANCE LINE58
 # Define a public display_balance method to your Account class. It should take a single parameter, pin_number.
 # The body of your method should check whether the pin_number is equal to pin (the result of calling the private pin method)
 # If it is, display_balance should puts "Balance: $#{@balance}."
 # Otherwise (else), it should puts pin_error (the pin_error message).
 # HINT
 # Something important to note: you can explicitly declare your public methods public, or you can omit public and your methods will be public by default. However! If you don’t use public, you need to put your public methods before the private keyword, since private affects every method after it appears. If you put your public methods below private and don’t label them public, they’ll be private, too!
+
+# TASK4 MAKING A WITHDRAWAL
+# Well done! Now let’s add in our second public method, which will allow us to withdraw money from our account.
+# The trick to this one is to realize that since @balance can only be accessed from inside the class, we’ll want to use @balance -= amount to decrease the balance by a certain amount.
+# Add a public withdraw method to your class that takes two parameters, pin_number and amount. If pin_number matches pin, your method should subtract the amount from the balance and puts "Withdrew #{amount}. New balance: $#{@balance}." Otherwise, it should puts pin_error.
+
 
