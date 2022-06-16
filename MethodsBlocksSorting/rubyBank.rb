@@ -71,6 +71,14 @@ class Account2
         puts pin_error
     end
   end
+  def deposit(pin_number, amount)
+    if pin_number == @pin
+      @balance += amount
+      puts "Deposit of #{amount} made."
+    else
+      puts pin_error
+    end
+  end
 
   private
   
@@ -82,6 +90,7 @@ class Account2
     return "Access denied: incorrect PIN."
   end
 end
+checking_account = Account2.new("Bank", 800_000)
 
 # TASK2 Private Method
 # Add two private methods to your Account class, pin and pin_error.pin should take no arguments and set an instance variable, @pin, equal to the PIN number 1234.
@@ -103,4 +112,12 @@ end
 # TASK5 INSTANCE OF AN ACCOUNT
 # We’re almost there! Now we just need to create an instance of Account so we can go about our banking business.
 # Last step: create an instance of your Account class called checking_account. Give it whatever name and starting balance you like!
+
+# TASK6 Adding Accounts
+# You’ve got your very own Account class and checking_account instance, complete with public and private methods.
+# Go ahead and try to get to your pin from outside the class. Not easy, is it?
+# How could you improve this class? You might:
+# Include a deposit method that lets users add money to their accounts
+# Include error checking that prevents users from overdrawing their accounts
+# Create CheckingAccounts or SavingsAccounts that inherit from Account
 
