@@ -100,4 +100,7 @@ end
 # The trick to this one is to realize that since @balance can only be accessed from inside the class, we’ll want to use @balance -= amount to decrease the balance by a certain amount.
 # Add a public withdraw method to your class that takes two parameters, pin_number and amount. If pin_number matches pin, your method should subtract the amount from the balance and puts "Withdrew #{amount}. New balance: $#{@balance}." Otherwise, it should puts pin_error.
 
+# TASK5 INSTANCE OF AN ACCOUNT
+# We’re almost there! Now we just need to create an instance of Account so we can go about our banking business.
+# Last step: create an instance of your Account class called checking_account. Give it whatever name and starting balance you like!
 
