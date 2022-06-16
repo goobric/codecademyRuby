@@ -49,12 +49,22 @@ def initialize(name, balance=100)
 # Finally, go ahead and store your parameters in instance variables @name and @balance, respectively.
 # Remember, you can use attr_reader :variable to make a variable read-only.
 class Account2
-    attr_reader :name, :balance
-    def initialize(name, balance=100)
-    @name = name
-    @balance = balance
+  attr_reader :name, :balance
+  def initialize(name, balance=100)
+  @name = name
+  @balance = balance
+  end
+  
+  public
+  def display_balance(pin_number)
+    if pin_number == @pin
+      puts "Balance: $#{@balance}."
+    else
+      puts pin_error
     end
-    private
+  end
+  
+  private
   
   def pin
     @pin = 1234
@@ -66,6 +76,14 @@ class Account2
 end
 
 # TASK2 Private Method
-Add two private methods to your Account class, pin and pin_error.pin should take no arguments and set an instance variable, @pin, equal to the PIN number 1234.
-pin_error should take no arguments and should simply return the string "Access denied: incorrect PIN."
+# Add two private methods to your Account class, pin and pin_error.pin should take no arguments and set an instance variable, @pin, equal to the PIN number 1234.
+# pin_error should take no arguments and should simply return the string "Access denied: incorrect PIN."
+
+# TASK3 DISPLAYING THE BALANCE
+# Define a public display_balance method to your Account class. It should take a single parameter, pin_number.
+# The body of your method should check whether the pin_number is equal to pin (the result of calling the private pin method)
+# If it is, display_balance should puts "Balance: $#{@balance}."
+# Otherwise (else), it should puts pin_error (the pin_error message).
+# HINT
+# Something important to note: you can explicitly declare your public methods public, or you can omit public and your methods will be public by default. However! If you don’t use public, you need to put your public methods before the private keyword, since private affects every method after it appears. If you put your public methods below private and don’t label them public, they’ll be private, too!
 
